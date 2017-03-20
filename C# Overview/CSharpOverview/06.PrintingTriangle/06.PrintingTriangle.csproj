@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{7D1DE8AF-5313-456D-8562-9B360990BC8C}</ProjectGuid>
+    <ProjectGuid>{6AFE1B92-F0D3-44D2-818B-AD2585AD339D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_05.SignOfIntegerNumber</RootNamespace>
-    <AssemblyName>05.SignOfIntegerNumber</AssemblyName>
+    <RootNamespace>_06.PrintingTriangle</RootNamespace>
+    <AssemblyName>06.PrintingTriangle</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

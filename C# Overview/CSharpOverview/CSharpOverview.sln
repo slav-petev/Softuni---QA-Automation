@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.ExactSumOfRealNumbers", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.BlankReceipt", "04.BlankReceipt\04.BlankReceipt.csproj", "{A1277EAC-9C51-41BA-B74B-6B32D9AFEA52}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05.SignOfIntegerNumber", "05.SignOfIntegerNumber\05.SignOfIntegerNumber.csproj", "{7D1DE8AF-5313-456D-8562-9B360990BC8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.PrintingTriangle", "06.PrintingTriangle\06.PrintingTriangle.csproj", "{6AFE1B92-F0D3-44D2-818B-AD2585AD339D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{A1277EAC-9C51-41BA-B74B-6B32D9AFEA52}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1277EAC-9C51-41BA-B74B-6B32D9AFEA52}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1277EAC-9C51-41BA-B74B-6B32D9AFEA52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1DE8AF-5313-456D-8562-9B360990BC8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1DE8AF-5313-456D-8562-9B360990BC8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1DE8AF-5313-456D-8562-9B360990BC8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1DE8AF-5313-456D-8562-9B360990BC8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6AFE1B92-F0D3-44D2-818B-AD2585AD339D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6AFE1B92-F0D3-44D2-818B-AD2585AD339D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6AFE1B92-F0D3-44D2-818B-AD2585AD339D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6AFE1B92-F0D3-44D2-818B-AD2585AD339D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
