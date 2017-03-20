@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6AFE1B92-F0D3-44D2-818B-AD2585AD339D}</ProjectGuid>
+    <ProjectGuid>{6425A8C1-5702-428D-B7B2-42FEBEAA2B5D}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_06.PrintingTriangle</RootNamespace>
-    <AssemblyName>06.PrintingTriangle</AssemblyName>
+    <RootNamespace>_07.DrawingFIlledSquare</RootNamespace>
+    <AssemblyName>07.DrawingFIlledSquare</AssemblyName>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PrintingTriangleExercise.cs" />
+    <Compile Include="DrawingFilledSquareExercise.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

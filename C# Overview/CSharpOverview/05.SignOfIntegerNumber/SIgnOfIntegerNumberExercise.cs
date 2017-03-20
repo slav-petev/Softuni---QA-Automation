@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace _05.SignOfIntegerNumber
 {
-    class Program
+    class SIgnOfIntegerNumberExercise
     {
         static void Main(string[] args)
         {
