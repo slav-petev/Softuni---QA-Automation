@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.DayOfWeek", "08.DayOfWee
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09.ReverseArrayOfIntegers", "09.ReverseArrayOfIntegers\09.ReverseArrayOfIntegers.csproj", "{B43C5280-1774-4450-A408-74B091B3E190}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.RemoveNegativesAndReverse", "10.RemoveNegativesAndReverse\10.RemoveNegativesAndReverse.csproj", "{D0D2BA74-851D-4998-BEEC-F06A6BFF8B10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{B43C5280-1774-4450-A408-74B091B3E190}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B43C5280-1774-4450-A408-74B091B3E190}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B43C5280-1774-4450-A408-74B091B3E190}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0D2BA74-851D-4998-BEEC-F06A6BFF8B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0D2BA74-851D-4998-BEEC-F06A6BFF8B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0D2BA74-851D-4998-BEEC-F06A6BFF8B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0D2BA74-851D-4998-BEEC-F06A6BFF8B10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
