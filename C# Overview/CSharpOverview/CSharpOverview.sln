@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06.PrintingTriangle", "06.P
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07.DrawingFIlledSquare", "07.DrawingFIlledSquare\07.DrawingFIlledSquare.csproj", "{6425A8C1-5702-428D-B7B2-42FEBEAA2B5D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08.DayOfWeek", "08.DayOfWeek\08.DayOfWeek.csproj", "{D2218017-DBB1-42F7-99E1-01BB7EADA70F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{6425A8C1-5702-428D-B7B2-42FEBEAA2B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6425A8C1-5702-428D-B7B2-42FEBEAA2B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6425A8C1-5702-428D-B7B2-42FEBEAA2B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2218017-DBB1-42F7-99E1-01BB7EADA70F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2218017-DBB1-42F7-99E1-01BB7EADA70F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2218017-DBB1-42F7-99E1-01BB7EADA70F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2218017-DBB1-42F7-99E1-01BB7EADA70F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
