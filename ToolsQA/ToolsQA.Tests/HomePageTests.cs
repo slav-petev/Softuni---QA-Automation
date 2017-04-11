@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using ToolsQA.Tests.Common;
 using ToolsQA.Tests.Pages;
 
 namespace ToolsQA.Tests
@@ -34,7 +35,7 @@ namespace ToolsQA.Tests
         {
             _homePage.RegistrationButton.Click();
 
-            Assert.AreEqual("http://demoqa.com/registration/", _homePageDriver.Url);
+            Assert.AreEqual(Settings.ToolQARegistrationPageUrl, _homePageDriver.Url);
 
         }
 

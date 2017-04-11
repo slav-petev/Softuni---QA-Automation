@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
 using OpenQA.Selenium.Support.UI;
+using ToolsQA.Tests.Common;
 
 namespace ToolsQA.Tests.Pages
 {
@@ -15,7 +16,6 @@ namespace ToolsQA.Tests.Pages
             }
         }
 
-        
         public IWebElement RegistrationButton
         {
             get
@@ -26,7 +26,7 @@ namespace ToolsQA.Tests.Pages
         }
 
         public HomePage(IWebDriver webDriver)
-            : base(webDriver, "http://www.demoqa.com")
+            : base(webDriver, Settings.ToolsQATopLevelUrl)
         {
             
         }
