@@ -17,6 +17,7 @@ namespace ToolsQA.Tests
             _homePageDriver = new ChromeDriver();
             _homePageDriver.Manage().Window.Maximize();
             _homePage = new HomePage(_homePageDriver);
+            _homePage.Navigate();
             
         }
 
@@ -24,8 +25,6 @@ namespace ToolsQA.Tests
         [Category("Home Page")]
         public void ShouldNavigatoToHomePageCorrectly()
         {
-            _homePage.Navigate();
-
             Assert.AreEqual("Home", _homePage.Heading.Text);
         }
 

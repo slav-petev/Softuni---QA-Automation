@@ -1,23 +1,27 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Support.UI;
 
 namespace ToolsQA.Tests.Pages
 {
     public class HomePage : BasePage
     {
-        [FindsBy(How = How.ClassName, Using = "entry-title")]
-        public IWebElement Heading { get; set; }
+        public IWebElement Heading
+        {
+            get
+            {
+                return Wait.Until(d =>
+                    d.FindElement(By.ClassName("entry-title")));
+            }
+        }
 
-        ////*[@id="menu-item-374"]/a
-        //[FindsBy(How = How.XPath, Using = "//*[@id='menu-item-374']/a")]
-        //public IWebElement RegistrationButton { get; set; }
-        ////*[@id="menu-item-374"]/a
+        
         public IWebElement RegistrationButton
         {
             get
             {
-                return Wait.Until(d => d
-                    .FindElement(By.XPath("//*[@id='menu-item-374']/a")));
+                return this.Wait.Until(d => 
+                    d.FindElement(By.XPath("//*[@id=\"menu-item-374\"]/a")));
             }
         }
 
