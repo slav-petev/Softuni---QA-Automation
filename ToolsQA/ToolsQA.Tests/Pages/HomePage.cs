@@ -1,7 +1,4 @@
-﻿using System;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
 using ToolsQA.Tests.Common;
 
 namespace ToolsQA.Tests.Pages
