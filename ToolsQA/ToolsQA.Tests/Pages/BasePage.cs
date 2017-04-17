@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ToolsQA.Tests.Common;
 
 namespace ToolsQA.Tests.Pages
 {
@@ -14,12 +15,13 @@ namespace ToolsQA.Tests.Pages
         protected IWebDriver WebDriver { get; private set; }
         protected WebDriverWait Wait { get; private set; }
         protected string Url { get; private set; }
-        
+
         protected BasePage(IWebDriver webDriver, string url)
         {
             this.WebDriver = webDriver;
             this.Url = url;
-            this.Wait = new WebDriverWait(this.WebDriver, TimeSpan.FromSeconds(5));
+            this.Wait = new WebDriverWait(this.WebDriver, TimeSpan.FromSeconds(
+                Settings.WaitTimeout));
         }
 
         public void Navigate()

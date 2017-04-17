@@ -9,6 +9,9 @@ namespace ToolsQA.Tests.Common
 {
     public static class Settings
     {
+        public static readonly int WaitTimeout =
+            int.Parse(ConfigurationManager.AppSettings["WaitTimeout"]);
+
         public static readonly string ToolsQATopLevelUrl =
             ConfigurationManager.AppSettings["DemoQATopUrl"];
 

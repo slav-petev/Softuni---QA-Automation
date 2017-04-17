@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using ToolsQA.Tests.Common;
@@ -7,42 +8,24 @@ using ToolsQA.Tests.Pages;
 namespace ToolsQA.Tests
 {
     [TestFixture]
-    public class HomePageTests
+    public class HomePageTests : PageTestsBase<HomePage>
     {
-        private IWebDriver _homePageDriver;
-        private HomePage _homePage;
-
-        [SetUp]
-        public void BeforeEachTest()
-        {
-            _homePageDriver = new ChromeDriver();
-            _homePageDriver.Manage().Window.Maximize();
-            _homePage = new HomePage(_homePageDriver);
-            _homePage.Navigate();
-            
-        }
+        protected override string PageToTest { get { return "Home"; } }
 
         [Test]
         [Category("Home Page")]
         public void ShouldNavigatoToHomePageCorrectly()
         {
-            Assert.AreEqual("Home", _homePage.Heading.Text);
+            Assert.AreEqual("Home", Page.Heading.Text);
         }
 
         [Test]
         [Category("Home Page")]
         public void ShouldNavigateToRegistrationPageCorrectly()
         {
-            _homePage.RegistrationButton.Click();
+            Page.RegistrationButton.Click();
 
-            Assert.AreEqual(Settings.ToolQARegistrationPageUrl, _homePageDriver.Url);
-
-        }
-
-        [TearDown]
-        public void AfterEachTest()
-        {
-            _homePageDriver.Quit();
+            Assert.AreEqual(Settings.ToolQARegistrationPageUrl, PageDriver.Url);
         }
     }
 }
