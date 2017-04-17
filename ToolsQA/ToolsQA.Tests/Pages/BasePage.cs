@@ -20,7 +20,6 @@ namespace ToolsQA.Tests.Pages
             this.WebDriver = webDriver;
             this.Url = url;
             this.Wait = new WebDriverWait(this.WebDriver, TimeSpan.FromSeconds(5));
-            PageFactory.InitElements(WebDriver, this);
         }
 
         public void Navigate()
