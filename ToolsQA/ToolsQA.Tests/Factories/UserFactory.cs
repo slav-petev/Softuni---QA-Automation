@@ -28,16 +28,20 @@ namespace ToolsQA.Tests.Factories
 
                 connection.Open();
                 user = connection.QuerySingle<User>(userSelectStatement);
-                user.Hobbies = GetHobbies(connection);
+                user.Hobbies = GetHobbies(connection, key);
             }
 
             return user;
         }
 
-        private static IEnumerable<string> GetHobbies(OleDbConnection connection)
+        private static IEnumerable<string> GetHobbies(OleDbConnection connection, string key)
         {
+            var hobbiesSelectStatement = string.Format(@"
+                SELECT [Hobbies]
+                FROM [Sheet1$]
+                WHERE [Key] = '{0}'", key);
             var hobbies = 
-                connection.QuerySingle<string>("SELECT [Hobbies] FROM [Sheet1$]");
+                connection.QuerySingle<string>(hobbiesSelectStatement);
 
             return hobbies?.Split(';');
         }
