@@ -12,7 +12,7 @@ namespace ToolsQA.Tests.Pages
             Wait.Until(d => d.FindElement(By.XPath("//*[@id=\"menu-item-374\"]/a")));
         
         public HomePage(IWebDriver webDriver)
-            : base(webDriver, Settings.ToolsQATopLevelUrl)
+            : base(webDriver, Settings.Url.ToolsQATopLevelUrl)
         {
             
         }

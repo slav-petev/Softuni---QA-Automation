@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using ToolsQA.Tests.Common;
+using ToolsQA.Tests.Factories;
 using ToolsQA.Tests.Pages;
 
 namespace ToolsQA.Tests
@@ -7,11 +8,11 @@ namespace ToolsQA.Tests
     [TestFixture]
     public class HomePageTests : PageTestsBase<HomePage>
     {
-        protected override string PageToTest { get { return "Home"; } }
+        protected override string PageToTest => "Home";
 
         [Test]
         [Category("Home Page")]
-        public void ShouldNavigatoToHomePageCorrectly()
+        public void ShouldLoadHomePageCorrectly()
         {
             Assert.AreEqual("Home", Page.Heading.Text);
         }
@@ -22,7 +23,7 @@ namespace ToolsQA.Tests
         {
             Page.RegistrationButton.Click();
 
-            Assert.AreEqual(Settings.ToolQARegistrationPageUrl, PageDriver.Url);
+            Assert.AreEqual(Settings.Url.ToolQARegistrationPageUrl, PageDriver.Url);
         }
     }
 }
