@@ -1,16 +1,16 @@
 ﻿using NUnit.Framework;
 using ToolsQA.Tests.Common;
-using ToolsQA.Tests.Factories;
+using ToolsQA.Tests.Enums;
 using ToolsQA.Tests.Pages;
 
 namespace ToolsQA.Tests
 {
-    [TestFixture]
     public class HomePageTests : PageTestsBase<HomePage>
     {
         protected override string PageToTest => "Home";
 
         [Test]
+        [TestCase(Browser.Chrome)]
         [Category("Home Page")]
         public void ShouldLoadHomePageCorrectly()
         {

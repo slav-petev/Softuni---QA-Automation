@@ -1,6 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+using ToolsQA.Tests.Enums;
 using ToolsQA.Tests.Factories;
 using ToolsQA.Tests.Pages;
 
@@ -10,6 +10,7 @@ namespace ToolsQA.Tests
     public abstract class PageTestsBase<TPage>
         where TPage : BasePage
     {
+        protected Browser Browser { get; }
         protected IWebDriver PageDriver { get; private set; }
         protected TPage Page { get; private set; }
 
@@ -18,7 +19,7 @@ namespace ToolsQA.Tests
         [SetUp]
         public void BeforeEachTest()
         {
-            PageDriver = new ChromeDriver();
+            PageDriver = WebDriverFactory.CreateDriver(Browser);
             PageDriver.Manage().Window.Maximize();
             Page = PageFactory.Create<TPage>(PageToTest, PageDriver);
             Page.Navigate();

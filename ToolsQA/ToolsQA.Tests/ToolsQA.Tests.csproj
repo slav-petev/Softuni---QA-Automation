@@ -57,8 +57,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\Settings.cs" />
+    <Compile Include="Enums\Browser.cs" />
     <Compile Include="Factories\PageFactory.cs" />
     <Compile Include="Factories\UserFactory.cs" />
+    <Compile Include="Factories\WebDriverFactory.cs" />
     <Compile Include="HomePageTests.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Pages\BasePage.cs" />

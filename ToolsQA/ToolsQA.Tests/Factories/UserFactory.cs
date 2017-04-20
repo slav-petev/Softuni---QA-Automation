@@ -1,10 +1,6 @@
 ﻿using Dapper;
-using System;
 using System.Collections.Generic;
 using System.Data.OleDb;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using ToolsQA.Tests.Common;
 using ToolsQA.Tests.Models;
 
